@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Paws and Claws: friendly dog grooming in Bolton. Book online any time.">
+  <title>Paws &amp; Claws Grooming | Bolton</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+  <!-- Header and navigation -->
+  <header class="site-header">
+    <a href="#top" class="logo">Paws &amp; Claws</a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#book">Book</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+ 
+  <main id="top">
+ 
+    <!-- Hero banner -->
+    <section class="hero">
+      <h1>Happy dogs, fresh from the salon</h1>
+      <p>Friendly grooming in Bolton for dogs of every size. Book online any time, day or night.</p>
+      <a href="#book" class="button">Book an appointment</a>
+    </section>
+ 
+    <!-- Services -->
+    <section id="services" class="services">
+      <h2>Our services</h2>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Small dogs</h3>
+          <img width="90%" src="https://www.thesprucepets.com/thmb/yH_dVf9ehigKYxqsvP5IHKviUKQ=/724x0/filters:no_upscale():strip_icc()/GettyImages-1313232209-e412c4dc9411489f8197c9c0067c94ed.jpg">
+          <p class="price">£30</p>
+          <p>Up to 10 kg, e.g. Chihuahua, Shih Tzu</p>
+          <p class="time">About 60 minutes</p>
+        </article>
+        <article class="card">
+          <h3>Medium dogs</h3>
+          <img width="90%" src="https://hips.hearstapps.com/hmg-prod/images/beagle-dog-on-the-lawn-royalty-free-image-566943335-1556145876.jpg?crop=0.665xw:1.00xh;0.168xw,0&resize=1200:*">
+          <p class="price">£40</p>
+          <p>10 to 25 kg, e.g. Cocker Spaniel, Beagle</p>
+          <p class="time">About 90 minutes</p>
+        </article>
+        <article class="card">
+          <h3>Large dogs</h3>
+          <img width="90%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGMu0d31xFjEK140sUR6-OTFDShswI7kaOagulJ8mweg&s=10">
+          <p class="price">£55</p>
+          <p>Over 25 kg, e.g. Labrador, Golden Retriever</p>
+          <p class="time">About 120 minutes</p>
+        </article>
+      </div>
+    </section>
+ 
+        <!-- Booking form -->
+    <section id="book" class="booking">
+      <h2>Book an appointment</h2>
+      <form id="booking-form" novalidate>
+        <div class="field">
+          <label for="owner">Your name</label>
+          <input type="text" id="owner" autocomplete="name">
+        </div>
+        <div class="field">
+          <label for="phone">Mobile number</label>
+          <input type="tel" id="phone" placeholder="07700 900123" autocomplete="tel">
+        </div>
+        <div class="field">
+          <label for="dog">Dog's name</label>
+          <input type="text" id="dog">
+        </div>
+        <div class="field">
+          <label for="size">Dog size</label>
+          <select id="size">
+            <option value="">Choose a size</option>
+            <option value="small">Small (up to 10 kg)</option>
+            <option value="medium">Medium (10 to 25 kg)</option>
+            <option value="large">Large (over 25 kg)</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="date">Preferred date</label>
+          <input type="date" id="date">
+        </div>
+        <p id="summary" class="summary">Choose a size to see the price and time.</p>
+        <button type="submit" class="button">Request booking</button>
+        <div id="message" class="message" role="alert"></div>
+      </form>
+    </section>
+
+ 
+  </main>
+ 
+<!-- Footer -->
+  <footer id="contact" class="site-footer">
+    <p>Paws &amp; Claws Grooming · 12 Mill Street, Bolton · Open Tuesday to Saturday, 9am to 5pm</p>
+    <p>Call us: <a href="tel:07700900123">07700 900123</a></p>
+  </footer>
+ 
+  <script src="script.js"></script>
+</body>
+</html>
